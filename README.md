@@ -11,11 +11,11 @@
 
 
 
-Detailed Steps -
+## Detailed Steps -
 
-###1.Each Image has RGB Channels and in each of these channels there are pixels with varying intensity from 0-255 (total 256) i.e. Grayscale level
-###2.Next step is to calculate the probability disribution for each pixel in each of the RGB Channels. pdf = grayscale level / (image height * image weight)
-###3.Next up is to calculate cdf (cumulative distributive function) by adding up the probability distributions of the pixels.
-###4.Further the grayscale level of each pixel is to be equalized by calculating the product of the calculated cdf of each pixel and maximum grayscale level i.e. 255. Equalized_pixel_level = (cdf_of_pixel * max_grayscale_level)
-###5.The above steps are followed to equalize the content and style image.
-###6.Last step is to map the equalized pixels of the style image to the content image to get the Histogram Matched Style Image.
+### 1.Each Image has RGB Channels and in each of these channels there are pixels with varying intensity from 0-255 (total 256) i.e. Grayscale level
+### 2.Next step is to calculate the probability disribution for each pixel in each of the RGB Channels. pdf = grayscale level / (image height * image weight)
+### 3.Next up is to calculate cdf (cumulative distributive function) by adding up the probability distributions of the pixels.
+### 4.Further the grayscale level of each pixel is to be equalized by calculating the product of the calculated cdf of each pixel and maximum grayscale level i.e. 255. Equalized_pixel_level = (cdf_of_pixel * max_grayscale_level)
+### 5.The above steps are followed to equalize the content and style image.
+### 6.Last step is to map the equalized pixels of the style image to the content image to get the Histogram Matched Style Image.
